@@ -1,6 +1,6 @@
 *{
     padding: 0;
-    margin: 0;
+    margin: 0 ;
 }
 html,body{
     height: 100%;
@@ -12,30 +12,174 @@ html,body{
     width: 100%;
     height: 100%;
     display: flex;
+    display: -webkit-flex; 
     flex-direction:column;
 }
 // 页面主体部分
 .main{
     width: 100%;
-     flex:1;
+    flex:1;
     overflow: auto;
+    #components-back-top-demo-custom .ant-back-top {
+        bottom: 300px;
+      }
+      #components-back-top-demo-custom .ant-back-top-inner {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        border-radius: 4px;
+        background-color: #1088e9;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+      }
+    // 首页
+    .home{
+        .title{
+            padding: 0.1rem 0.15rem;
+            background-color: #f8f8f8;
+            border-color: #e7e7e7;
+            margin-bottom: 20px;
+            font-size: 0.22rem;
+            .anticon{
+                vertical-align:-0.17em;
+            }
+            span{
+                margin-left: 5px;
+                color: black;
+                font-size: 0.18rem;
+                font-weight: 600;
+            }
+            }
+        h2{
+            color: #2db7f5;
+            margin-left: 0.1rem;
+        }
+        .particulars-logo{
+          
+            div{
+                width: 100%;
+                height: 1.8rem;
+                img{
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .particulars-text{
+            padding: 0.2rem;
+            h3{
+                font-weight: 900;
+            }
+            p{
+                margin-top: 5px;
+            }
+        }
+        // 活动通知
+        .inform{
+            padding: 10px;
+            font-size: 20px;
+            margin-top: 20px;
+           
+            span{
+                margin-left: 10px;
+            }
+            p{
+                padding:20px 10px;
+                margin-top: 10px;
+                box-shadow:2px 2px 8px rgba(0, 0, 0, 0.24);
+                font-size: 15px;
+                font-weight: 800;
+            }
+        }
+    }
+    // 商品列表
+    .ProductList{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        .list{
+            width: 35%;
+            height: 100%;
+            background-color: #F8F8FF;
+            overflow: auto;
+            .list-item{
+                width: 100%;
+                padding: 20px 0;
+                text-align: center;
+                background-color: #f8f8f8;
+                font-size: 0.15rem;
+                font-weight: 600;
+            }
+        }
+        // 商品详情
+        .details{
+            width: 65%;
+            overflow: auto;
+            .details-item{
+                padding: 0.1rem;
+                display:flex;
+                flex-direction: row;
+                img{
+                    display:block;
+                    width: 80px;
+                    height:80px;
+                }
+                .text{
+                    padding: 0 0.10rem;
+                    p{font-size: 12px; font-weight: 300};
+                    .text-bottom{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        div{
+                            margin-top: 10px;
+                            width: 0.25rem;
+                            height: 0.25rem;
+                            display: flex;
+                            align-items:center;
+                            // text-align: center;
+                            justify-content:center;
+                            color: #e7e7e7;
+                            font-size: 0.16rem;
+                            border-radius: 100%;
+                            background-color: #1088e9;
+                            font-weight: 700;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
 }
 // 页面底部导航
 .Nav{
     width: 100%;
-    height: 0.60rem;
-    background-color: coral;
-    ul{
-        width: 100%;
+    background-color:#F7F7F7;
+    border-top:0.8px solid#D3D3D3;
+    div{
+        width:100%;
+        display: -webkit-flex; 
         display: flex;
-        li{
+        padding: 3px 0;
+        a{ 
             flex:1;
+            padding: 2px 0;
             text-align: center;
-            font-size: 28px;
+            font-size: 0.22rem;
             list-style: none;
+            text-decoration: none;
             p{
-                font-size:20px;
+                font-size:0.13rem;
+                
             }
         }
     }
+    .selected{
+        color: coral;
+    }
 }
+// 被选中导航样式

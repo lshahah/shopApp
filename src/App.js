@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import 'antd/dist/antd.css';
+import './reset.css'
 import './App.css';
-import { Button } from 'antd';
-import FileUpload from './component/FileUpload'
-import { Upload, Icon, message } from 'antd';
 import Nav from './containers/Nav'
 import Main from './containers/Main'
-import 'normalize.css'
+
+
+// import 'normalize.css'
 
 
 class App extends Component {
